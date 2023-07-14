@@ -1,0 +1,4 @@
+.sprite {
+  transition: transform 3.5s linear;
+  list-style: none;
+}
