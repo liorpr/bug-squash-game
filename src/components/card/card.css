@@ -1,0 +1,33 @@
+.card {
+  padding: 12px 20px;
+  margin-top: 10px;
+  border-radius: 10px;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+@media (max-width: 425px) {
+  .card:not(.full-screen-mobile) {
+    flex: 1;
+    text-align: center;
+  }
+
+  .card.full-screen-mobile {
+    flex: 1;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    margin: 0;
+  }
+
+  .card.full-screen-mobile ul {
+    list-style: none;
+    padding: 0;
+  }
+}
